@@ -6,23 +6,18 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
 var core_1 = require("@angular/core");
-var platform_browser_1 = require("@angular/platform-browser");
-var app_component_1 = require("./app.component");
-var card_component_1 = require("./card/card.component");
-var AppModule = (function () {
-    function AppModule() {
+var CardComponent = (function () {
+    function CardComponent() {
     }
-    return AppModule;
+    return CardComponent;
 }());
-AppModule = __decorate([
-    core_1.NgModule({
-        imports: [platform_browser_1.BrowserModule],
-        declarations: [
-            app_component_1.AppComponent,
-            card_component_1.CardComponent
-        ],
-        bootstrap: [app_component_1.AppComponent]
+CardComponent = __decorate([
+    core_1.Component({
+        moduleId: module.id,
+        selector: 'app-card',
+        templateUrl: 'card.component.html',
+        styleUrls: ['card.component.css']
     })
-], AppModule);
-exports.AppModule = AppModule;
-//# sourceMappingURL=app.module.js.map
+], CardComponent);
+exports.CardComponent = CardComponent;
+//# sourceMappingURL=card.component.js.map
